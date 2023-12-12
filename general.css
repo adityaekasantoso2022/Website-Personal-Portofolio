@@ -1,0 +1,579 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+html {
+  scroll-behavior: smooth; /* Aktifkan efek scroll yang mulus */
+}
+body {
+  margin: 0;
+  font-family: "Graphik Light", sans-serif;
+  src: url("asset/font/GraphikLight.woff") format("woff");
+  overflow-x: hidden;
+  font-weight: 200;
+}
+hr {
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 1px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+span {
+  margin: 0;
+  word-break: break-word;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.baseline {
+  align-items: baseline;
+}
+.text-center {
+  text-align: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.d-grid {
+  display: grid;
+}
+.btn-form[disabled] {
+  pointer-events: none;
+  opacity: 0.6;
+}
+#form-loading-animation {
+  display: none;
+  /* other styles */
+}
+@media (min-width: 768px) {
+  .container-icon-button {
+    width: 36px;
+    height: 36px;
+  }
+  .hero-section,
+  .form-section,
+  .detail {
+    padding-top: 90px;
+  }
+  /* logo  */
+  a.secondary-footer {
+    font-size: 18px;
+  }
+  .single-content {
+    margin: 80px 0 100px;
+  }
+  img.logo-magoa {
+    height: 60px;
+    /* width: 210px;
+    height: 64px; */
+  }
+  img.logo-secuse {
+    height: 60px;
+    /* width: 208px;
+    height: 44px; */
+  }
+  img.logo-azura {
+    height: 60px;
+    /* width: 207px;
+    height: 50px; */
+  }
+  img.logo-essentials {
+    height: 60px;
+    /* width: 225px;
+    height: 44px; */
+  }
+  img.logo-cassius {
+    height: 60px;
+    /* width: 156px;
+    height: 50px; */
+  }
+  img.logo-ea {
+    height: 60px;
+    /* width: 160px;
+    height: 60px; */
+  }
+  h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 100px;
+  }
+
+  h2,
+  p.heading2 {
+    font-size: 3.75rem;
+    font-weight: 200;
+    line-height: auto;
+  }
+
+  h3 {
+    font-size: 2.625rem;
+    font-weight: 200;
+    line-height: 64px;
+  }
+
+  .for-mobile {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 48px;
+  }
+
+  .p1 {
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 28px;
+  }
+
+  .p2 {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: auto;
+  }
+  .mt-xl {
+    margin-top: 100px;
+  }
+  .mb-xl {
+    margin-bottom: 100px;
+  }
+  .my-xl {
+    margin: 100px 0;
+  }
+  .mt-lg {
+    margin-top: 80px;
+  }
+  .mb-lg {
+    margin-bottom: 80px;
+  }
+  .my-lg {
+    margin: 80px 0;
+  }
+  .py-lg {
+    padding: 80px 0;
+  }
+  .mt-md {
+    margin-top: 52px;
+  }
+  .mb-md {
+    margin-bottom: 52px;
+  }
+  .my-md {
+    margin: 52px 0;
+  }
+  .mt-sm {
+    margin-top: 42px;
+  }
+  .my-sm {
+    margin: 42px 0;
+  }
+  .py-sm {
+    padding: 42px 0;
+  }
+  .col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-center-2 .left,
+  .page-center-2 .right .tip {
+    max-width: 90%;
+    margin: auto;
+  }
+  .container-icon-button {
+    width: 32px;
+    height: 32px;
+  }
+  .single .detail-item {
+    padding-bottom: 32px;
+  }
+  .hero-section,
+  .form-section,
+  .detail {
+    padding-top: 77px;
+  }
+  header a.primary-nav {
+    margin-right: -12px;
+  }
+  .single-content {
+    margin: 32px 0;
+  }
+  a.btn.primary-nav {
+    padding: 12px 28px !important;
+  }
+  img.logo-magoa {
+    height: 42px;
+    /* width: 144px;
+    height: 44px; */
+  }
+  img.logo-secuse {
+    height: 42px;
+    /* width: 140px;
+    height: 30px; */
+  }
+  img.logo-azura {
+    height: 42px;
+    /* width: 140px;
+    height: 34px; */
+  }
+  img.logo-essentials {
+    height: 42px;
+    /* width: 140px;
+    height: 28px; */
+  }
+  img.logo-cassius {
+    height: 42px;
+    /* width: 93px;
+    height: 30px; */
+  }
+  img.logo-ea {
+    height: 42px;
+    /* width: 123px;
+    height: 46px; */
+  }
+  .even img {
+    margin-bottom: 0 !important;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .for-desktop {
+    display: none;
+  }
+  h1 {
+    font-size: 2.875rem;
+    font-weight: 200;
+    line-height: 59px;
+  }
+
+  h2,
+  p.heading2 {
+    font-size: 2.25rem;
+    font-weight: 200;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 200;
+    line-height: 42px;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 36px;
+  }
+
+  .p1 {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 28px;
+  }
+
+  .p2 {
+    font-size: 0.875rem;
+    font-weight: 200;
+    line-height: 20px;
+  }
+  .mb-xl {
+    margin-bottom: 32px;
+  }
+  .mt-lg {
+    margin-top: 32px;
+  }
+  .mb-lg {
+    margin-bottom: 32px;
+  }
+  .my-lg {
+    margin: 32px 0;
+  }
+
+  .py-lg {
+    padding: 32px 0;
+  }
+  .my-md {
+    margin: 24px 0;
+  }
+  .mt-md {
+    margin: 24px;
+  }
+  .py-sm {
+    padding: 32px 0;
+  }
+  .mb-md {
+    margin-bottom: 32px;
+  }
+  .last-mb-0 {
+    margin-bottom: 0 !important;
+  }
+}
+.space-12 {
+  display: grid;
+  gap: 12px;
+}
+/* basic theme color  */
+.light-theme {
+  background: var(--white);
+  color: var(--black);
+}
+
+.dark-theme {
+  background: var(--black);
+  color: var(--white);
+}
+
+.page-center {
+  max-width: 1240px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  word-break: break-all;
+}
+a.btn {
+  padding: 16px 42px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+a.primary {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+}
+a.primary:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+a.primary-nav.dark-section {
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+a.primary-nav.dark-section:hover {
+  border: 1px solid #fff;
+  background: transparent;
+  color: var(--white);
+}
+a.primary-nav.light-section {
+  background: var(--black);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+a.primary-nav.light-section:hover {
+  border: 1px solid var(--black);
+  background: var(--white);
+  color: var(--black);
+}
+
+a.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--white);
+  background-color: transparent;
+}
+
+a.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+a.secondary-footer {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: var(--white);
+}
+
+a.secondary-footer:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* zoom image  */
+.zoom {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 1;
+}
+/* Selector ini mendeteksi button pada mode gelap dengan kelas 'dark-section' ketika dihover */
+.btn.primary-nav {
+  transition: background-color 0.3s ease; /* Animation */
+}
+
+.zoom img {
+  transition: 0.8s ease all;
+  width: 100%;
+  object-fit: cover;
+}
+.zoom:hover img {
+  transform: scale(1.025);
+}
+.container-icon-button {
+  border-radius: 100px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.light-theme-btn {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.light-theme-btn:hover {
+  background: #000;
+}
+
+.dark-theme-btn {
+  border: 1px solid var(--white);
+}
+.dark-theme-btn:hover {
+  background: var(--white);
+}
+.icon-button {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 0%) rotate(0);
+  transition: transform 0.3s, opacity 0.3s;
+  transform-origin: bottom right;
+}
+
+.container-icon-button .icon-button:first-child {
+  transform: translate(0%, 0%) rotate(0);
+}
+
+/* .container-icon-button:hover .icon-button:first-child {
+  transform: translate(100%, -100%) rotate(45deg);
+}
+
+.container-icon-button:hover .icon-button:last-child {
+  transform: translate(0%, 0%) rotate(0);
+  opacity: 1;
+} */
+
+.icon-button:last-child {
+  transform: translate(-100%, 100%) rotate(45deg);
+  opacity: 0;
+  border-radius: 100px;
+}
+
+/* hover  */
+/* Style untuk seluruh container */
+.single-content {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* double  */
+/* Style untuk setiap item dalam konten ganda */
+.double-item {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover pada setiap item */
+.double-content-field:hover {
+  /* transform: scale(1.025); */
+}
+@media (min-width: 768px) {
+  .page-center-2 {
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* Style agar icon button ikut bergerak meskipun yang dihover adalah container */
+  .single-content:hover .light-theme-btn .icon-button:first-child {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+  .single .detail-item p {
+    margin-top: 0;
+  }
+  .single-content-desc {
+    width: 640px;
+  }
+  .single .detail-item {
+    padding-bottom: 100px;
+  }
+  .single-content:hover .light-theme-btn .icon-button:last-child {
+    transform: translate(0%, 0%) rotate(0);
+    opacity: 1;
+    background: #000;
+  }
+
+  .single-content:hover .dark-theme-btn .icon-button:first-child {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+
+  .single-content:hover .dark-theme-btn .icon-button:last-child {
+    transform: translate(0%, 0%) rotate(0);
+    opacity: 1;
+    background: var(--white);
+  }
+
+  /* Efek hover pada gambar di dalam container */
+  .single-content:hover .zoom img {
+    transform: scale(1.025);
+  }
+
+  /* Style agar icon button ikut bergerak meskipun yang dihover adalah item */
+  .double-content-field:hover .light-theme-btn .icon-button:first-child {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+
+  .double-content-field:hover .light-theme-btn .icon-button:last-child {
+    transform: translate(0%, 0%) rotate(0);
+    opacity: 1;
+    background: #000;
+  }
+
+  .double-content-field:hover .dark-theme-btn .icon-button:first-child {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+
+  .double-content-field:hover .dark-theme-btn .icon-button:last-child {
+    transform: translate(0%, 0%) rotate(0);
+    opacity: 1;
+    background: var(--white);
+  }
+
+  /* Efek hover pada gambar di dalam setiap item */
+  .double-content-field:hover .zoom img {
+    transform: scale(1.025);
+  }
+}
+
+/* hover contact  */
+/* Menaikkan tingkat spesifisitas untuk memastikan aturan ini berlaku */
+.contact-detail a:hover .container-icon-button.light-theme-btn {
+  background: #000;
+}
+
+.contact-detail a:hover .container-icon-button .icon-button:first-child {
+  transform: translate(100%, -100%) rotate(45deg);
+}
+
+.contact-detail a:hover .container-icon-button .icon-button:last-child {
+  transform: translate(0%, 0%) rotate(0);
+  opacity: 1;
+}

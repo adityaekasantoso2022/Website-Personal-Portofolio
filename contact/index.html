@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from adityaekasantoso.my.id/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Dec 2023 12:25:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Are you wanna build a stunning product? Or you have an outdated product
+      and want to refresh it?
+    </title>
+    <meta
+      property="og:description"
+      content="Just fill in the short form below and we can grab a coffee together to discuss about it. I will make the process as easy and quick as possible.
+      So, what are you waiting for? Let’s start the project!"
+    />
+    <meta property="og:image" content="../asset/image/ContactCover.png" />
+    <link rel="icon" type="image/x-icon" href="../asset/image/Favicon.png" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../general.css" />
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="../contact.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Skrip Firebase ditambahkan di sini -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Firebase Database -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header page-center">
+        <a href="../index.html">
+          <div class="logo">
+            <img src="../asset/Logo.png" alt="Logo" />
+          </div>
+        </a>
+        <div class="d-flex nav-desktop">
+          <div class="d-flex space-action">
+            <div>
+              <a href="index.html" class="btn primary-nav">Start a Project</a>
+            </div>
+            <div class="menu-toggle">
+              <svg
+                class="menu-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  class="menu-line"
+                  x="2"
+                  y="4"
+                  width="20"
+                  height="2"
+                  fill="black"
+                />
+                <rect
+                  class="menu-line"
+                  x="2"
+                  y="11"
+                  width="20"
+                  height="2"
+                  fill="black"
+                />
+                <rect
+                  class="menu-line"
+                  x="2"
+                  y="18"
+                  width="20"
+                  height="2"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="../index.html#works">Works</a></li>
+              <li><a href="../index.html#work-process">Work Process</a></li>
+              <li><a href="../index.html#testimonial">Testimonial</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="spacer"></div>
+    <!-- section form -->
+    <section class="form-section dark-section dark-theme" id="form">
+      <div class="page-center">
+        <div class="alert">
+          <p>
+            Message sent successfully! Timotius will contact you soon to discuss
+            the project.
+          </p>
+        </div>
+        <div class="form-content d-grid col-2">
+          <div class="left">
+            <p class="subtitle" data-aos="fade-up">
+              Are you wanna build a <u>stunning product</u>? Or you have an
+              outdated product and want to refresh it?
+            </p>
+            <p class="p1" data-aos="fade-up">
+              Just fill in the short form below and we can grab a coffee
+              together to discuss about it. I will make the process as easy and
+              quick as possible. <br />So, what are you waiting for? Let’s start
+              the project!
+            </p>
+
+            <p class="p2">Satisfied clients</p>
+            <div class="clients-logo">
+              <div class="client-logo-item">
+                <img
+                  src="../asset/image/logo/NextgenLogoInvert.svg"
+                  alt="nextgen"
+                  loading="lazy"
+                />
+              </div>
+              <div class="client-logo-item">
+                <img
+                  src="../asset/image/logo/CassiusLogoInvertContact.svg"
+                  alt="cassius"
+                  loading="lazy"
+                />
+              </div>
+              <div class="client-logo-item">
+                <img
+                  src="../asset/image/logo/AzuraLogoInvert.svg"
+                  alt="azura"
+                  loading="lazy"
+                />
+              </div>
+              <div class="client-logo-item">
+                <img
+                  src="../asset/image/logo/MagoaLogoInvert.svg"
+                  alt="magoa"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="form-container light-theme">
+              <p class="subtitle">Start Your Project With Me</p>
+              <div class="form d-grid">
+                <form action="https://adityaekasantoso.my.id/api/submitForm" id="contactForm" method="POST">
+                  <div class="inputBox d-grid">
+                    <label for="name">Name<span>*</span></label>
+                    <input type="text" name="name" id="name" required />
+                  </div>
+                  <div class="inputBox d-grid">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" name="email" id="email" required />
+                  </div>
+                  <div class="inputBox d-grid">
+                    <label for="company">Company</label>
+                    <input type="company" name="company" id="company" />
+                  </div>
+                  <div class="inputBox d-grid">
+                    <label for="message">Message<span>*</span></label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      cols="50"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="inputBox d-grid">
+                    <button
+                      class="d-flex align-center justify-center btn-form"
+                      type="submit"
+                    >
+                      Submit
+
+                      <lottie-player
+                        id="form-loading-animation"
+                        src="../asset/animation/loading-animation.json"
+                        background="transparent.html"
+                        speed="1"
+                        style="width: 20px; height: 20px"
+                        direction="1"
+                        mode="normal"
+                        loop
+                        autoplay
+                      ></lottie-player>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section form -->
+
+    <!-- section contact -->
+    <section class="contact py-lg" id="contact">
+      <div class="page-center">
+        <div class="contact-content">
+          <p class="subtitle mb-lg" data-aos="fade-up" data-aos-duration="600">
+            You want to connect with me? Let’s connect! I'm happy to make
+            friends. Let’s grab a coffee together soon!
+          </p>
+          <hr />
+          <div
+            class="contact-detail d-grid col-2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <a
+              href="mailto:timotiusmuliawan05@gmail.com"
+              target="_blank"
+              style="color: var(--black)"
+            >
+              <div
+                class="d-flex contact-item mob-border-bottom desc-border-bottom space-between align-center"
+              >
+                <div class="contact-info">
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Email
+                  </p>
+                  <p
+                    class="subtitle for-desktop"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    timotiusmuliawan05@gmail.com
+                  </p>
+                  <p
+                    class="subtitle for-mobile"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    timotiusmuliawan05<br />@gmail.com
+                  </p>
+                </div>
+                <div class="container-icon-button light-theme-btn">
+                  <div class="icon-button">
+                    <img
+                      src="../asset/image/arrow-dark.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="icon-button _02">
+                    <img
+                      src="../asset/image/arrow-light.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://dribbble.com/timotiusonly"
+              target="_blank"
+              style="color: var(--black)"
+            >
+              <div
+                class="d-flex contact-item mob-border-bottom desc-border-bottom space-between align-center"
+              >
+                <div class="contact-info">
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Dribbble
+                  </p>
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Aditya Eka Santoso
+                  </p>
+                </div>
+                <div class="container-icon-button light-theme-btn">
+                  <div class="icon-button">
+                    <img
+                      src="../asset/image/arrow-dark.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="icon-button _02">
+                    <img
+                      src="../asset/image/arrow-light.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/timotiusmuliawan"
+              target="_blank"
+              style="color: var(--black)"
+            >
+              <div
+                class="d-flex contact-item mob-border-bottom desc-border-bottom space-between align-center"
+              >
+                <div class="contact-info">
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Instagram
+                  </p>
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    @timotiusmuliawan
+                  </p>
+                </div>
+                <div class="container-icon-button light-theme-btn">
+                  <div class="icon-button">
+                    <img
+                      src="../asset/image/arrow-dark.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="icon-button _02">
+                    <img
+                      src="../asset/image/arrow-light.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/timotius-muliawan-80ba45174/n"
+              target="_blank"
+              style="color: var(--black)"
+            >
+              <div
+                class="d-flex contact-item mob-border-bottom desc-border-bottom space-between align-center"
+              >
+                <div class="contact-info">
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    LinkedIn
+                  </p>
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Aditya Eka Santoso
+                  </p>
+                </div>
+                <div class="container-icon-button light-theme-btn">
+                  <div class="icon-button">
+                    <img
+                      src="../asset/image/arrow-dark.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="icon-button _02">
+                    <img
+                      src="../asset/image/arrow-light.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.figma.com/@timotius"
+              target="_blank"
+              style="color: var(--black)"
+            >
+              <div
+                class="d-flex contact-item mob-border-bottom space-between align-center"
+              >
+                <div class="contact-info">
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Figma Community
+                  </p>
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Aditya Eka Santoso
+                  </p>
+                </div>
+                <div class="container-icon-button light-theme-btn">
+                  <div class="icon-button">
+                    <img
+                      src="../asset/image/arrow-dark.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="icon-button _02">
+                    <img
+                      src="../asset/image/arrow-light.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.upwork.com/freelancers/~01e0a0e95ab189d4cf?referrer_url_path=%2Fsearch%2Fprofiles%2F"
+              target="_blank"
+              style="color: var(--black)"
+            >
+              <div class="d-flex contact-item space-between align-center">
+                <div class="contact-info">
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Upwork
+                  </p>
+                  <p
+                    class="subtitle"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                  >
+                    Aditya Eka Santoso S.
+                  </p>
+                </div>
+                <div class="container-icon-button light-theme-btn">
+                  <div class="icon-button">
+                    <img
+                      src="../asset/image/arrow-dark.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                  <div class="icon-button _02">
+                    <img
+                      src="../asset/image/arrow-light.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section contact -->
+
+    <footer class="dark-section dark-theme">
+      <div class="page-center">
+        <div class="d-flex space-between footer-top py-lg">
+          <p class="subtitle" data-aos="fade-up" data-aos-duration="600">
+            You want to start a project with me? Let’s talk!
+          </p>
+          <div data-aos="fade-up" data-aos-duration="600">
+            <a href="#" class="btn secondary-footer">Start a Project</a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom py-sm">
+          <p class="p2 text-center">© 2023 Aditya Eka Santoso</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="../home.js"></script>
+
+    <script src="../header.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.8.2.js"></script> -->
+    <script type="text/javascript" src="../header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // ...
+
+      $(document).ready(function () {
+        //...
+
+        $("#contactForm").on("submit", function (event) {
+          event.preventDefault(); // Prevent form from submitting normally.
+
+          // Get reference to the submit button and loading animation.
+          var submitBtn = $(".btn-form");
+          var loadingAnimation = $("#form-loading-animation");
+
+          // Show loading animation and disable the submit button.
+          loadingAnimation.show(); // This will show the loading animation.
+          loadingAnimation[0].play(); // This will start the loading animation.
+          submitBtn.attr("disabled", "disabled"); // This will disable the submit button.
+
+          var form_data = $(this).serialize(); // Get the form data.
+
+          $.ajax({
+            type: "POST",
+            url: "/api/submitForm", // Endpoint API that you are targeting.
+            data: form_data,
+            success: function () {
+              // Hide the loading animation and enable the submit button.
+              loadingAnimation.hide(); // This will hide the loading animation.
+              loadingAnimation[0].stop(); // This will stop lottie animation.
+              submitBtn.removeAttr("disabled"); // This will enable the submit button.
+
+              // Show success alert and reset the form.
+              $(".alert").show().delay(5000).fadeOut();
+              document.getElementById("contactForm").reset();
+            },
+            error: function () {
+              // On error, hide the loading animation and enable the submit button.
+              loadingAnimation.hide(); // This will hide the loading animation.
+              loadingAnimation[0].stop(); // This will stop lottie animation.
+              submitBtn.removeAttr("disabled"); // This will enable the submit button.
+
+              // Show an error message or do something when an error occurs.
+              console.log("An error occurred.");
+            },
+          });
+        });
+      });
+    </script>
+    <script src="../analytics.js"></script>
+  </body>
+
+<!-- Mirrored from adityaekasantoso.my.id/contact/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Dec 2023 12:25:46 GMT -->
+</html>
