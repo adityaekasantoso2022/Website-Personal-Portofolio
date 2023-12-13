@@ -7,8 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Are you wanna build a stunning product? Or you have an outdated product
-      and want to refresh it?
+      Aditya Eka Santoso | Link
     </title>
     <meta
       property="og:description"
@@ -43,7 +42,7 @@
         <div class="d-flex nav-desktop">
           <div class="d-flex space-action">
             <div>
-              <a href="index.html" class="btn primary-nav">Start a Project</a>
+              <a href="../index.html" class="btn primary-nav">Start a Project</a>
             </div>
             <div class="menu-toggle">
               <svg
@@ -101,14 +100,7 @@
         <div class="form-content d-grid col-2">
           <div class="left">
             <p class="subtitle" data-aos="fade-up">
-              Are you wanna build a <u>stunning product</u>? Or you have an
-              outdated product and want to refresh it?
-            </p>
-            <p class="p1" data-aos="fade-up">
-              Just fill in the short form below and we can grab a coffee
-              together to discuss about it. I will make the process as easy and
-              quick as possible. <br />So, what are you waiting for? Let’s start
-              the project!
+              Get to know <u>Aditya Eka Santoso</u> better. Let's connect now!
             </p>
             </div>
           </div>
@@ -127,7 +119,7 @@
             data-aos-duration="600"
           >
             <a
-              href="mailto:timotiusmuliawan05@gmail.com"
+              href="mailto:adityaekasantoso12@gmail.com"
               target="_blank"
               style="color: var(--black)"
             >
@@ -177,7 +169,7 @@
             </a>
 
             <a
-              href="https://dribbble.com/timotiusonly"
+              href="https://adityaekasantoso.my.id"
               target="_blank"
               style="color: var(--black)"
             >
@@ -190,14 +182,14 @@
                     data-aos="fade-up"
                     data-aos-duration="600"
                   >
-                    Dribbble
+                    Website
                   </p>
                   <p
                     class="subtitle"
                     data-aos="fade-up"
                     data-aos-duration="600"
                   >
-                    Aditya Eka Santoso
+                    adityaekasantoso.my.id
                   </p>
                 </div>
                 <div class="container-icon-button light-theme-btn">
@@ -220,7 +212,7 @@
             </a>
 
             <a
-              href="https://www.instagram.com/dittyaa28"
+              href="https://www.instagram.com/dittyya28/"
               target="_blank"
               style="color: var(--black)"
             >
@@ -263,7 +255,7 @@
             </a>
 
             <a
-              href="https://www.linkedin.com/in/timotius-muliawan-80ba45174/n"
+              href="https://www.linkedin.com/in/adityaekasantoso/"
               target="_blank"
               style="color: var(--black)"
             >
@@ -312,15 +304,6 @@
 
     <footer class="dark-section dark-theme">
       <div class="page-center">
-        <div class="d-flex space-between footer-top py-lg">
-          <p class="subtitle" data-aos="fade-up" data-aos-duration="600">
-            You want to start a project with me? Let’s talk!
-          </p>
-          <div data-aos="fade-up" data-aos-duration="600">
-            <a href="#" class="btn secondary-footer">Start a Project</a>
-          </div>
-        </div>
-        <hr />
         <div class="footer-bottom py-sm">
           <p class="p2 text-center">© 2023 Aditya Eka Santoso</p>
         </div>
@@ -331,60 +314,8 @@
       AOS.init();
     </script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
     <script src="../home.js"></script>
-
     <script src="../header.js"></script>
-    <!-- <script src="http://code.jquery.com/jquery-1.8.2.js"></script> -->
-    <script type="text/javascript" src="../header.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      // ...
-
-      $(document).ready(function () {
-        //...
-
-        $("#contactForm").on("submit", function (event) {
-          event.preventDefault(); // Prevent form from submitting normally.
-
-          // Get reference to the submit button and loading animation.
-          var submitBtn = $(".btn-form");
-          var loadingAnimation = $("#form-loading-animation");
-
-          // Show loading animation and disable the submit button.
-          loadingAnimation.show(); // This will show the loading animation.
-          loadingAnimation[0].play(); // This will start the loading animation.
-          submitBtn.attr("disabled", "disabled"); // This will disable the submit button.
-
-          var form_data = $(this).serialize(); // Get the form data.
-
-          $.ajax({
-            type: "POST",
-            url: "/api/submitForm", // Endpoint API that you are targeting.
-            data: form_data,
-            success: function () {
-              // Hide the loading animation and enable the submit button.
-              loadingAnimation.hide(); // This will hide the loading animation.
-              loadingAnimation[0].stop(); // This will stop lottie animation.
-              submitBtn.removeAttr("disabled"); // This will enable the submit button.
-
-              // Show success alert and reset the form.
-              $(".alert").show().delay(5000).fadeOut();
-              document.getElementById("contactForm").reset();
-            },
-            error: function () {
-              // On error, hide the loading animation and enable the submit button.
-              loadingAnimation.hide(); // This will hide the loading animation.
-              loadingAnimation[0].stop(); // This will stop lottie animation.
-              submitBtn.removeAttr("disabled"); // This will enable the submit button.
-
-              // Show an error message or do something when an error occurs.
-              console.log("An error occurred.");
-            },
-          });
-        });
-      });
-    </script>
     <script src="../analytics.js"></script>
   </body>
 
