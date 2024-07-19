@@ -1,210 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aditya Eka Santoso | Portofolio</title>
-    <meta
-      property="og:description"
-      content="Skilled in Android development and UI/UX design, I bring efficiency and visual appeal to digital experiences. Let's create something great together!"
-    />
-    <link rel="icon" type="image/x-icon" href="asset/image/Favicon.png" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="restructure.css" />
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
-  </head>
-  <body>
-    <div class="bg-permanent"></div>
-
-    <div class="bg-animation"></div>
-    <header class="fade-down">
-      <div class="header page-center">
-        <a href="index.html">
-          <div class="logo">
-            <img loading="lazy" src="asset/Logo.png" alt="Logo" />
-          </div>
-        </a>
-        <div class="d-flex nav-desktop">
-          <div class="d-flex space-action">
-            <div>
-              <a href="mailto:kontak@adityaekasantoso.my.id" class="btn primary-nav">Start a Project</a>
-            </div>
-            <div class="menu-toggle">
-              <svg
-                class="menu-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  class="menu-line"
-                  x="2"
-                  y="4"
-                  width="20"
-                  height="2"
-                  fill="black"
-                />
-                <rect
-                  class="menu-line"
-                  x="2"
-                  y="11"
-                  width="20"
-                  height="2"
-                  fill="black"
-                />
-                <rect
-                  class="menu-line"
-                  x="2"
-                  y="18"
-                  width="20"
-                  height="2"
-                  fill="black"
-                />
-              </svg>
-            </div>
-          </div>
-
-          <nav>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portofolio">Portofolio</a></li>
-              <li><a href="link/index.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <!-- section hero -->
-    <div class="spacer"></div>
-
-    <section class="hero-section dark-section dark-theme">
-      <div class="page-center-2">
-        <div class="hero-contents">
-          <div class="left">
-            <h2 class="subtitle">Hi! I’m Aditya Eka Santoso</h2>
-            <h1 class="headingfirst">I Android Developer &</h1>
-            <h1 class="headingsecond for-desktop">UI/UX Design</h1>
-            <h1 class="headingsecond for-mobile last-mb-0">UI/UX Design</h1>
-            <div class="cta" data-aos="fade-down">
-              <a class="btn primary btn-click cta1"
-                >💡 Available To Work</a
-              >
-              <a
-                href="https://drive.google.com/file/d/1-rd80BDV7c2MOxzf3LGQqk6bzjl5zREW/view?usp=sharing"
-                target="_blank"
-                class="btn secondary cta2"
-                >Chack Resume</a
-              >
-            </div>
-          </div>
-          <div class="right">
-            <div class="the-wrapper">
-              <div class="shadow"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="dark-section dark-theme">
-      <div class="page-center">
-        <div class="d-flex space-between footer-top py-lg">
-          <p class="subtitle" data-aos="fade-up" data-aos-duration="600">
-            You want to start a project with me? Let’s talk!
-            <br><b>kontak@adityaekasantoso.my.id</b>
-          </p>
-          <div data-aos="fade-up" data-aos-duration="600">
-            <a href="mailto:kontak@adityaekasantoso.my.id" class="btn secondary-footer">Start a Project</a>
-          </div>
-        </div>
-        <hr />
-        <div class="footer-bottom py-sm">
-          <p class="p2 text-center">© 2024 Aditya Eka Santoso</p>
-        </div>
-      </div>
-    </footer>
-    <script src="home.js"></script>
-
-    <script src="header.js"></script>
-    <script>
-      // Fungsi animasi dengan Promise
-      function animateElement(element, transform, delay) {
-        return new Promise((resolve) => {
-          setTimeout(function () {
-            element.style.transform = transform;
-            element.style.opacity = "1";
-            resolve();
-          }, delay);
-        });
-      }
-
-      window.onload = function () {
-        document.body.classList.add("animated");
-
-        // animasi bg
-        setTimeout(function () {
-          document.querySelector(".bg-animation").style.display = "none";
-          document.querySelector(".bg-permanent").style.display = "block";
-
-          // animasi header setelah bg selesai
-          setTimeout(function () {
-            let headerElement = document.querySelector(".header"); // tambahkan ini di sini
-
-            headerElement.style.visibility = "visible";
-            headerElement.style.opacity = "1";
-            // headerElement.style.transform = "translateY(0)";
-            headerElement.style.display = "flex";
-            // animasi hero-section setelah header selesai
-            setTimeout(function () {
-              document.querySelector(".hero-section").style.visibility =
-                "visible";
-              document.querySelector(".hero-section").style.opacity = "1";
-              document.querySelector(".hero-section").style.display = "block";
-
-              document.querySelector(".project").style.visibility = "visible";
-            }, 500); // delay 500ms untuk animasi hero-section
-          }, 500); // delay 500ms untuk animasi header
-        }, 1000); // durasi animasi bg
-
-        // animasi teks dengan delay
-        let leftContent = document.querySelector(".hero-contents .left");
-        let h2Element = leftContent.querySelector("h2");
-        let h1Elementfirst = leftContent.querySelector(".headingfirst");
-        let h1Elementsecond = leftContent.querySelector(".headingsecond");
-        let ctaElement1 = leftContent.querySelector(".cta1");
-        let ctaElement2 = leftContent.querySelector(".cta2");
-
-        animateElement(h2Element, "translateX(0)", 100)
-          .then(() => animateElement(h1Elementfirst, "translateX(0)", 800))
-          .then(() => animateElement(h1Elementsecond, "translateX(0)", 800))
-          .then(() => animateElement(ctaElement1, "translateX(0)", 800))
-          .then(() => animateElement(ctaElement2, "translateX(0)", 300))
-          .then(() => {
-            startAnimProcess();
-          });
-      };
-    </script>
-    <script src="analytics.js"></script>
-  </body>
-  
-  <style>
-    .double-project {
-      position: relative;
-      overflow: hidden;
-    }
-  
-    .double-project img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
-  
-<!-- Mirrored from adityaekasantoso.my.id/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Dec 2023 12:25:36 GMT -->
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>Performing Maintenance</title>
+<style type="text/css">
+      body { text-align: center; padding: 150px; }
+      h1 { font-size: 40px; }
+      body { font: 20px Helvetica, sans-serif; color: #333; }
+      #article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+      a { color: #dc8100; text-decoration: none; }
+      a:hover { color: #333; text-decoration: none; }
+    </style>
+</head>
+<body>
+<div id="article">
+<h1>Our site is getting a little tune up and some love.</h1>
+<div>
+<p>We apologize for the inconvenience, but we're performing some maintenance. You can still contact us at <a href="mailto:admin@codingislove.com">kontak@adityaekasantoso.my.id</a>. We'll be back up soon!</p>
+<p>&mdash; Coding is Love</p>
+</div>
+</div>
 </html>
